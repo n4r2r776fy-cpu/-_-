@@ -1,0 +1,9 @@
+<h1>{{ media.title }}</h1>
+<p>{{ media.description }}</p>
+<hr>
+<h3>Коментар:</h3>
+{% if media.comment %}
+    <p>{{ media.comment.text }}</p>
+{% else %}
+    <p>Немає коментарів.</p>
+{% endif %}
