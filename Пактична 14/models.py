@@ -1,11 +1,9 @@
 class Order:
-    """Клас даних замовлення"""
     def __init__(self, order_id, amount):
         self.id = order_id
         self.amount = amount
 
 class OrderRepository:
-    """Клас для зберігання даних у пам'яті"""
     def __init__(self):
         self._orders = []
 
